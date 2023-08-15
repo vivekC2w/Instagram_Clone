@@ -68,7 +68,7 @@ const Profile = () =>{
             }}>
                 <div>
                     <img style={{width:"160px", height:"160px", borderRadius:"80px"}}
-                        src={state?state.pic:"Loading"}
+                        src={state?state.pic:"loading"}
                     />
                     
                 </div>

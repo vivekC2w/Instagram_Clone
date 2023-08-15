@@ -120,9 +120,6 @@ const Profile  = ()=>{
                         UnFollow
                     </button>
                     }
-                   
-                  
-
                </div>
            </div>
      

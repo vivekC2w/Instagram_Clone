@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
 a {
   color:black !important
 }
@@ -46,6 +45,10 @@ a {
   margin: 26px auto;
 }
 
+.collection-item{
+  width: 100%;
+}
+
 #toast-container {
   top:30px !important;
   right: 20px !important;
@@ -54,4 +57,11 @@ a {
 
 .material-icons:hover {
   cursor: pointer;
+}
+
+.user-profile-pic {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  border-radius: 50%; /* To make the profile pic round */
+  margin-right: 10px; /* Space between profile pic and name */
 }

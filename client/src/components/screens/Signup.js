@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import {Link, useNavigate } from 'react-router-dom'
-// import { useHistory } from 'react-router-dom';
 import M from 'materialize-css'
 
 const Signup = () =>{
@@ -66,7 +65,6 @@ const Signup = () =>{
     }
 
     const PostData = () => {
-
         if(image){
             uploadPic()
         }else{

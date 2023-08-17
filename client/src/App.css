@@ -65,3 +65,8 @@ a {
   border-radius: 50%; /* To make the profile pic round */
   margin-right: 10px; /* Space between profile pic and name */
 }
+
+.user-profile{
+  display: flex;
+  align-items: center;
+}

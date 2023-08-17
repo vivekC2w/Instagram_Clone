@@ -5,7 +5,13 @@ const {MONGOURI} = require('./config/keys')
 
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(MONGOURI);
+mongoose.connect(MONGOURI,{
+    useNewUrlParser:true,
+    useUnifiedTopology: true
+
+})
+
+// mongoose.connect(MONGOURI);
 mongoose.connection.on('connected', ()=> {
     console.log("connected to mongo yeahh");
 })

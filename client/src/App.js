@@ -1,7 +1,7 @@
 import React, {useEffect, createContext, useReducer, useContext} from 'react'
 import NavBar from './components/Navbar';
 import "./App.css"
-import {BrowserRouter, Routes, Route, useNavigate} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import Home from './components/screens/Home'
 import Signin from './components/screens/SignIn'
 import Profile from './components/screens/Profile'
@@ -19,16 +19,16 @@ const Routing = () => {
   const {state, dispatch} = useContext(UserContext)
   useEffect(()=>{
     const user = JSON.parse(localStorage.getItem("user"))
-    
     if(user){
       dispatch({type:"USER", payload:user})
     } else {
-      if(!navigate.location.pathname.startsWith('/reset')){
+      console.log(navigate);
+      if(!navigate.location?.pathname?.startsWith('/reset')){
         navigate('/signin')
       }
         
     }
-  },[navigate, dispatch])
+  },[])
   return (
     <Routes>
         <Route exact path="/" element={<Home />} />

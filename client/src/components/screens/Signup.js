@@ -104,7 +104,7 @@ const Signup = () =>{
                 </div>
                 </div>
                 <button className="btn waves-effect waves-light #64b5f6 blue darken-1"
-                onClick={()=>PostData()}
+                onClick={PostData}
                 >
                     Sign up
                 </button>

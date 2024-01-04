@@ -22,7 +22,6 @@ const Routing = () => {
     if(user){
       dispatch({type:"USER", payload:user})
     } else {
-      console.log(navigate);
       if(!navigate.location?.pathname?.startsWith('/reset')){
         navigate('/signin')
       }

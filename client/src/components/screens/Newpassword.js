@@ -5,7 +5,6 @@ const SignIn  = ()=>{
     const navigate = useNavigate()
     const [password,setPasword] = useState("")
     const {token} = useParams()
-    console.log(token)
     const PostData = ()=>{
         fetch("/new-password",{
             method:"post",

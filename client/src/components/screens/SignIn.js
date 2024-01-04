@@ -25,12 +25,12 @@ const SignIn = () =>{
             })
         }).then(res=>res.json())
         .then(data=>{
-            console.log(data)
             if(data.error){
                 M.toast({html: data.error, classes:"#c62828 red darken-3"})
             } else {
                 localStorage.setItem("jwt", data.token)
-                localStorage.setItem("user", JSON.stringify(data.user))
+                const {followers, following, ...user} = data.user
+                localStorage.setItem("user", JSON.stringify(user))
                 dispatch({type:"USER", payload:data.user})
                 M.toast({html: "signed in successfully", classes:"#43a047 green darken-1"})
                 navigate('/')

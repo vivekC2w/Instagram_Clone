@@ -70,3 +70,56 @@ a {
   display: flex;
   align-items: center;
 }
+
+.avatar-container{
+  display: flex;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.avatar-container:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.avatar-image {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.501);
+}
+
+.avatar-name {
+  font-weight: bold;
+  color: #222;
+  font-size: 18px;
+}
+
+.comments {
+  /* display: none; */
+}
+
+.likes-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material-icons {
+  font-size: 30px;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+}
+
+.material-icons:hover {
+  transform: scale(1.1);
+}
+
+.material-icons:active {
+  transform: scale(0.95);
+}
+
+.card-content {
+  padding: 10px 24px !important;
+}
